@@ -9,7 +9,7 @@
 
 # server
 
-- name: "Configure distsearch.conf [distributedSearch] - server state=present" 
+- name: "Configure distsearch.conf [distributedSearch] - server state=present"
   ini_file: dest={{ splunk_conf_path }}/distsearch.conf
             section=distributedSearch
             option=servers

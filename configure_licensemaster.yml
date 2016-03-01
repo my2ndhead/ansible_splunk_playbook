@@ -4,6 +4,6 @@
 
   roles:
     - conf/web
-    - conf/outputs
+#    - conf/outputs
     - conf/server
     - group/licensemaster

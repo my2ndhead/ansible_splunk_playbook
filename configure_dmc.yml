@@ -4,7 +4,7 @@
 
   roles:
     - conf/web
-    - conf/outputs
+#    - conf/outputs
     - conf/server
     - conf/distsearch
     - group/searchhead

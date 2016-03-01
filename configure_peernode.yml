@@ -1,6 +1,6 @@
 - name: Configure splunk peernodes
   hosts: peernode
-  user: splunk
+  remote_user: root
 
   roles:
     - conf/web
