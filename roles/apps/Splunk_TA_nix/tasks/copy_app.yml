@@ -23,9 +23,9 @@
         item.value.bundle is defined"
   with_dict: "{{ vars['app_variable'] }} | app_default"
   notify: 
-    - splunk reload deploy-server 
-    - splunk apply cluster-bundle
-    - splunk apply shcluster-bundle
+    - splunk_reload_deploy_server
+    - splunk_apply_cluster_bundle
+    - splunk_apply_shcluster_bundle
 
 - name: Remove temporary file 
   file: path="{{ splunk_installation.remote_app_temp_path }}/{{ item.value.bundle }}"

@@ -7,6 +7,6 @@
         {{ item.value.install }} == false"
   with_dict: "{{ vars['app_variable'] }} | app_default"
   notify: 
-    - splunk reload deploy-server 
-    - splunk apply cluster-bundle
-    - splunk apply shcluster-bundle
+    - splunk_reload_deploy_server
+    - splunk_apply_cluster_bundle
+    - splunk_apply_shcluster_bundle
